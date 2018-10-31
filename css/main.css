@@ -844,3 +844,7 @@ body section,
     color: #ffbe2f;
     text-align: center;
 }
+
+.nav-item, a.nav-link, a.nav-link p{
+    cursor: pointer;
+}
