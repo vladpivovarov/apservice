@@ -26,6 +26,7 @@
 
 }
 
+
 @media only screen and (max-width : 480px){
     html {
         font-size: 15px;
@@ -35,7 +36,7 @@
     }
 
     button.nav-btn, button.nav-btn:active, button.nav-btn:focus {
-        top: -67px;
+        top: -50px;
     }
     .map-block {
         height: 230px;
@@ -47,7 +48,16 @@
     }
 }
 
+@media only screen and (max-width : 420px){
+
+    button.nav-btn, button.nav-btn:active, button.nav-btn:focus {
+        top: -70px;
+    }
+   
 }
+
+
+
 
 @media only screen and (min-width : 576px){
     .contacts {
@@ -61,7 +71,7 @@
     }
 
     button.nav-btn, button.nav-btn:hover, button.nav-btn:active, button.nav-btn:focus {
-        top: -50px;
+        top: -95px;
     }
 
     .prevelegios-txt {
