@@ -5,16 +5,24 @@ $(document).ready(function() {
 	var mail = function() {
       $(".vladozin").submit(function(e) { //Change
       	e.preventDefault();
+
         var th = $(this);
         var form = e.target;
         var name = form.querySelector('.input_name').value;
         var status = form.querySelector('.status');
+        var user_name = form.querySelector('.input_name').value;
+        var user_phone = form.querySelector('.input_phone').value;
 
         $.ajax({
           type: "POST",
-          url: "./mail.php", //Change
-          data: th.serialize()
+          url: "./mail2.php", //Change
+          dataType: "json",
+          data: {
+            "user_name": user_name,
+            "user_phone": user_phone
+          }
         }).done(function(result) {
+          
           status.innerHTML = result + " " + name + "! Скоро мы с вами свяжемся";
           setTimeout(function() {
             status.innerHTML = "";
@@ -25,6 +33,7 @@ $(document).ready(function() {
             th.trigger("reset");
           }, 1000);
         });
+
         return false;
       });
     };
@@ -34,6 +43,8 @@ $(document).ready(function() {
 	//Выпадающее меню
     $(".nav-btn").click(function () {
         $(this).next().slideToggle();
-    })
+    });
+
+    $(".input_phone").mask("+7 (999) 99-99-999");
 
 });

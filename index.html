@@ -38,6 +38,36 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://constructcalc.ru_443/style_small.css" type="text/css" />
 
+  <!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+	    (function (d, w, c) {
+	        (w[c] = w[c] || []).push(function() {
+	            try {
+	                w.yaCounter50956304 = new Ya.Metrika2({
+	                    id:50956304,
+	                    clickmap:true,
+	                    trackLinks:true,
+	                    accurateTrackBounce:true,
+	                    webvisor:true
+	                });
+	            } catch(e) { }
+	        });
+
+	        var n = d.getElementsByTagName("script")[0],
+	            s = d.createElement("script"),
+	            f = function () { n.parentNode.insertBefore(s, n); };
+	        s.type = "text/javascript";
+	        s.async = true;
+	        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+	        if (w.opera == "[object Opera]") {
+	            d.addEventListener("DOMContentLoaded", f, false);
+	        } else { f(); }
+	    })(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/50956304" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
 </head>
 <body>
 	<header>
@@ -47,8 +77,8 @@
 					<div class="row">
 						<div class="col-4 col-sm-3 col-md-4 col-lg-6 text-center text-md-left">
 							<div class="soc-btn">
-								<a href="https://vk.com/apservise82" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
-								<a href="https://www.instagram.com/apservice.82/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+								<a href="https://vk.com/apservice82" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
+								<a href="https://www.instagram.com/ap.service.82/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 							</div>
 						</div>
 						<div class="col-6 col-sm-7 col-md-6 col-lg-6 text-right">
@@ -97,11 +127,8 @@
 						<div class="col-11 col-sm-10 text-center white-border mx-3">
 							<form class="vladozin py-lg-4">
 								<div class="row px-4 justify-content-center">
-									<input type="hidden" name="project_name" value="ApService">
-									<input type="hidden" name="admin_email" value="vladpivovarov2797@ya.ru">
-									<input type="hidden" name="form_subject" value="Заявка на обратный звонок">
 									<input type="text" class="input input_name col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Name" required="" placeholder="Ваше имя">
-									<input type="text" class="input col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Phone" required="" placeholder="Номер телефона">
+									<input type="text" class="input input_phone col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Phone" required="" placeholder="Номер телефона">
 									<button class="btn btn-primary btn-color btn-sm col-12 my-2 col-lg-4 col-xl-4 m-lg-3 top-btn font-weight-bold" type="submit">Заказать бесплатный звонок</button>
 								</div>
 								<div class="status"></div>
@@ -1319,11 +1346,8 @@
 						<h4>Вызовите мастера для диагностики, ремонта или подбора дизайна для Вашего iPhone</h4>
 						<form class="vladozin py-lg-4">
 							<div class="row px-4 justify-content-center">
-								<input type="hidden" name="project_name" value="Сайт автосервиса">
-								<input type="hidden" name="admin_email" value="vladpivovarov2797@ya.ru">
-								<input type="hidden" name="form_subject" value="Заявка на обратный звонок">
 								<input type="text" class="input input_name col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Name" required="" placeholder="Ваше имя">
-								<input type="text" class="input col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Phone" required="" placeholder="Номер телефона">
+								<input type="text" class="input input_phone col-12 my-2 mx-1 col-lg-3 m-lg-3 top-input" name="Phone" required="" placeholder="Номер телефона">
 								<button class="btn btn-primary btn-color btn-sm col-12 my-2 col-lg-4 col-xl-4 m-lg-3 top-btn font-weight-bold" type="submit">Заказать бесплатный звонок</button>
 							</div>
 							<p class="grey-txt">Введенные данные конфиденциальны</p>
@@ -1361,6 +1385,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="js/tether.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/common.js"></script>
 	<script>
 		$(document).ready(function(){
